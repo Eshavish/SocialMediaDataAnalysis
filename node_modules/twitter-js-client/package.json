@@ -1,0 +1,34 @@
+{
+  "name": "twitter-js-client",
+  "description": "Twitter JS Client",
+  "version": "0.0.5",
+  "private": false,
+  "directories": {
+    "lib": "./lib"
+  },
+  "dependencies": {
+    "qs": "*",
+    "oauth": "*"
+  },
+  "readme": "## Description\nA twitter client written in Javascript\n\n## Usage\n\n    var twitter = new Twitter(config);\n\ttwitter.getUserTimeline();\n\ttwitter.getMentionsTimeline();\n\ttwitter.getHomeTimeline();\n\ttwitter.getReTweetsOfMe();\n\ttwitter.getTweet();",
+  "readmeFilename": "README.md",
+  "_id": "twitter-js-client@0.0.5",
+  "dist": {
+    "shasum": "8859c67e52faf00ff6b8d5c46ac370af1565d4b2",
+    "tarball": "https://registry.npmjs.org/twitter-js-client/-/twitter-js-client-0.0.5.tgz"
+  },
+  "_from": "twitter-js-client@*",
+  "_npmVersion": "1.2.32",
+  "_npmUser": {
+    "name": "molina",
+    "email": "nick.ad.molina@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "molina",
+      "email": "nick.ad.molina@gmail.com"
+    }
+  ],
+  "_shasum": "8859c67e52faf00ff6b8d5c46ac370af1565d4b2",
+  "_resolved": "https://registry.npmjs.org/twitter-js-client/-/twitter-js-client-0.0.5.tgz"
+}

@@ -1,0 +1,37 @@
+{
+  "name": "twitter-api-node-express",
+  "description": "Twitter JS Client Hooked in with Node and Express",
+  "version": "0.1.0",
+  "author": {
+    "name": "Jacob Carter"
+  },
+  "dependencies": {
+    "twitter-js-client": "*",
+    "body-parser": "^1.12.2",
+    "express": "^4.12.3"
+  },
+  "license": "MIT",
+  "gitHead": "573d2a3817bd9921dce2d628bf3b3e551a5dd513",
+  "_id": "twitter-api-node-express@0.1.0",
+  "scripts": {},
+  "_shasum": "63b794f98375b37db71d4e2aea8e703d0c44fdda",
+  "_from": "twitter-api-node-express@latest",
+  "_npmVersion": "2.1.6",
+  "_nodeVersion": "0.10.33",
+  "_npmUser": {
+    "name": "jacobscarter",
+    "email": "jacob@ieksolutions.com"
+  },
+  "dist": {
+    "shasum": "63b794f98375b37db71d4e2aea8e703d0c44fdda",
+    "tarball": "https://registry.npmjs.org/twitter-api-node-express/-/twitter-api-node-express-0.1.0.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "jacobscarter",
+      "email": "jacob@ieksolutions.com"
+    }
+  ],
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/twitter-api-node-express/-/twitter-api-node-express-0.1.0.tgz"
+}
