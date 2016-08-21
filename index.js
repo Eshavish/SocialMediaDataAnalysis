@@ -18,6 +18,7 @@ var config = {
 	"accessTokenSecret": "QQRxk3wKipwpfjfEBquV9tQ0CW9RU7o11UhM1BbtDfumK"
 };
 
+//Twitter client object is created based on your configurations.
 var twitter = new module.exports.Twitter(config);
 
 app.use( bodyParser.json() );       // to support JSON-encoded bodies
@@ -35,6 +36,8 @@ app.use(express.static('public'));
 //post to retrieve user data
 app.post('/twitter/user', function (req, res) {
 	var username = req.body.username;
+
+	//Twitter API is called.
 	var data = twitter.getUser({ screen_name: username}, function(error, response, body){
 		res.status(404).send({
 			"error" : "User Not Found"
@@ -48,6 +51,24 @@ app.post('/twitter/user', function (req, res) {
 	});
 });
 
+//Get search tweets
+app.post('/twitter/searchTweets', function (req, res) {
+	var searchQuery = req.body.query;
+	console.log("Called BLAH");
+
+	//Twitter API is called.
+	var data = twitter.getSearch({'q': searchQuery ,'count': 10}, function(error, response, body){
+		res.status(404).send({
+			"error" : "Tweets Not Found"
+		});
+	}, function(data){
+		res.send({
+			result : {
+				"userData" : data
+			}
+		});
+	});
+});
 
 var server = app.listen(3000, function () {
 	var host = server.address().address;

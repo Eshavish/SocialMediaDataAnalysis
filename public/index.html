@@ -16,9 +16,13 @@
   <div class="row" style="margin-top:50px;">
     <div class="col-xs-12">
       <input class="form-control" type="text" placeholder="Twitter User Name (e.g. BoyCook)" ng-model="userName">
+      <input class="form-control" type="text" placeholder="Your search query (e.g #iPhone)" ng-model="query">
+
       <br>
       <br>
       <p class="text-center"><button class="btn btn-primary" ng-click="getUser(userName)">Get User</button></p>
+      <p class="text-center"><button class="btn btn-primary" ng-click="getSearchTweets(query)">Get Tweets</button></p>
+
     </div>
   </div>
   <div class="row" ng-if="twitterErrors">
